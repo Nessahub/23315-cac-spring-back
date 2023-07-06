@@ -3,11 +3,10 @@
 */
 
 function loginUC (repository) {
-    
 
-    async  function exec (username, password) {
+    async function exec(username,password) {
         const resp = await repository(username, password);
-        const jwt = await resp.text();
+        const jwt = await resp.text();        
         return jwtAdapter(jwt);
     }
 

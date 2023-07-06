@@ -1,9 +1,9 @@
-function jwtAdapter (dataExterno) {
-
-    const jwt ={
+function jwtAdapter (dataExterno) { //texto!
+    
+    const jwt = {
         type: 'Bearer',
         jwt: dataExterno
     }
 
-        return dataExterno;
+    return jwt;
 }
