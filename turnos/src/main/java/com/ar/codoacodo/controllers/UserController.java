@@ -65,7 +65,7 @@ public class UserController {
 
 		User user = this.userService.buscarUser(id);
 
-		UserDTO dto = UserDTO.builder().id(user.getId()).username(user.getUsername())
+			UserDTO dto = UserDTO.builder().id(user.getId()).username(user.getUsername())
 				.roles(user.getRoles().stream().map(x -> x.getRol()).collect(Collectors.toSet())).build();
 
 		// http status code=200
